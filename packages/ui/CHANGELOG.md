@@ -1,5 +1,11 @@
 # @repo/ui
 
+## 0.3.0
+
+### Minor Changes
+
+- tryy
+
 ## 0.2.0
 
 ### Minor Changes
