@@ -1,6 +1,6 @@
 {
   "name": "@repo/ui",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "private": true,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,7 +14,7 @@
     "./index.css": "./dist/index.css"
   },
   "publishConfig": {
-    "name": "@tinykit",
+    "name": "@tiny-kit",
     "access": "public"
   },
   "scripts": {
