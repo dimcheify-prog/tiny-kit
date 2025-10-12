@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --filter=@repo/ui --filter=storybook --filter=docs",
+    "dev": "turbo run dev --filter=@dimcheify/tiny-kit --filter=storybook-app --filter=web",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.7",
-    "@repo/ui": "workspace:*",
+    "@dimcheify/tiny-kit": "workspace:*",
     "prettier": "^3.6.2",
     "turbo": "^2.5.8",
     "typescript": "5.9.2"

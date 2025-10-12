@@ -1,9 +1,10 @@
 import { defineConfig } from 'tsup';
+// TODO fix warrning with module import "path"
+import path from 'path';
 
 export default defineConfig({
-  entry: {
-    ui: './src/**/*.ts',
-  },
+  entry: ['src/index.ts'],
+  outDir: './dist',
   format: ['cjs', 'esm'],
   dts: true,
   splitting: false,
@@ -12,5 +13,10 @@ export default defineConfig({
   external: ['react', 'react-dom'],
   loader: {
     '.css': 'default',
+  },
+  esbuildOptions: (options) => {
+    options.alias = {
+      '@': path.resolve(__dirname, 'src'),
+    };
   },
 });

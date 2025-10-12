@@ -1,6 +1,5 @@
 import type { Preview } from '@storybook/react-vite';
-
-import '@repo/ui/index.css';
+import '@dimcheify/tiny-kit/index.css';
 
 const preview: Preview = {
   parameters: {

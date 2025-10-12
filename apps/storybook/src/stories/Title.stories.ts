@@ -1,4 +1,4 @@
-import { Title } from '@repo/ui';
+import { Title } from '@dimcheify/tiny-kit';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 const meta = {
