@@ -1,5 +1,18 @@
 # @repo/ui
 
+## 0.4.1
+
+### Patch Changes
+
+- add documentation
+- docs
+
+## 0.4.1-beta.1
+
+### Patch Changes
+
+- add documentation
+
 ## 0.4.1-beta.0
 
 ### Patch Changes

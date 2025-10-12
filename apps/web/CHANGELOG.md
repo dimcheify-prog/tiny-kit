@@ -1,5 +1,20 @@
 # web
 
+## 0.1.6
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dimcheify/tiny-kit@0.4.1
+
+## 0.1.6-beta.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @dimcheify/tiny-kit@0.4.1-beta.1
+
 ## 0.1.6-beta.0
 
 ### Patch Changes
