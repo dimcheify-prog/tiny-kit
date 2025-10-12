@@ -1,0 +1,10 @@
+src/
+.turbo/
+node_modules/
+*.log
+.DS_Store
+tsconfig.json
+tsup.config.ts
+eslint.config.mjs
+.changeset/
+storybook-static/
