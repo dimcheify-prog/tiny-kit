@@ -1,5 +1,17 @@
 # @repo/ui
 
+## 0.4.1-beta.0
+
+### Patch Changes
+
+- docs
+
+## 0.4.0
+
+### Minor Changes
+
+- c440d92: added classNames utils
+
 ## 0.3.0
 
 ### Minor Changes

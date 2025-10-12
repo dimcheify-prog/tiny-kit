@@ -2,11 +2,10 @@
 
 A modern UI component library for React
 
-[![npm version](https ://badge.fury.io/js/@dimcheify%2Ftiny-kit.svg)](https://www.npmjs.com/package/@dimcheify/tiny-kit)
+[![npm version](https://badge.fury.io/js/@dimcheify%2Ftiny-kit.svg)](https://www.npmjs.com/package/@dimcheify/tiny-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
-
 ```bash
 npm install @dimcheify/tiny-kit
 # or
@@ -24,3 +23,33 @@ import '@dimcheify/tiny-kit/index.css';
 ```
 
 Then just import UI components.
+
+```javascript
+import { Title, Button } from '@dimcheify/tiny-kit';
+
+function App() {
+  return (
+    <div>
+      <Title>Welcome to Tiny Kit</Title>
+      <Button>Get Started</Button>
+    </div>
+  );
+}
+```
+
+---
+
+## ✨ Features
+
+- 🎨 Modern and clean design
+- 🚀 Lightweight and fast
+- 📦 Tree-shakeable
+- 💪 TypeScript support
+- ⚡️ Zero dependencies (peer deps only)
+
+---
+
+## 📄 License
+
+MIT © [Dmitrij Perelygin](https://github.com/dimcheify-prog)
+
