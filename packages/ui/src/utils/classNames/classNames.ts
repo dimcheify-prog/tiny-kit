@@ -1,5 +1,3 @@
-// TODO: add conditional args (conditionalClasses, additional)
-
 type ClassType = string | undefined;
 
 export default function classNames(

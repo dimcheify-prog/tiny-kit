@@ -23,15 +23,22 @@
     "check-types": "tsc --noEmit",
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
-    "test": "vitest"
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
+    "@vitest/ui": "^3.2.4",
     "eslint": "^9.34.0",
+    "jsdom": "^27.0.0",
     "tsup": "^8.5.0",
     "typescript": "5.9.2",
     "vitest": "^3.2.4"

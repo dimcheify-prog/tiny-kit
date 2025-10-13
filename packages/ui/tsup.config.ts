@@ -1,6 +1,5 @@
 import { defineConfig } from 'tsup';
-// TODO fix warrning with module import "path"
-import path from 'path';
+import {resolve} from 'path'
 
 export default defineConfig({
   entry: ['src/index.ts'],
@@ -16,7 +15,7 @@ export default defineConfig({
   },
   esbuildOptions: (options) => {
     options.alias = {
-      '@': path.resolve(__dirname, 'src'),
+      '@': resolve(__dirname, 'src'),
     };
   },
 });
