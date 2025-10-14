@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import {Button} from "@dimcheify/tiny-kit";
+import {FcFlashOn, FcDown} from "react-icons/fc"
 
 const meta = {
   title: 'Example/Button',
@@ -26,6 +27,8 @@ export const Primary: Story = {
     children: 'Кнопка',
     loading: false,
     loadingProps: <div>Loading</div>,
-    fullWidth: false
+    fullWidth: false,
+    // startIcon: <FcDown/>,
+    endIcon: <FcFlashOn/>,
   },
 };

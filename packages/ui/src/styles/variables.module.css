@@ -2,5 +2,8 @@
   --primary-color: #0088cc;
   --secondary-color: #A19679;
 
+  --contained-hover-color: #0194e1;
+  --transparent-hover-color: rgba(1, 148, 225, 0.23);
+
   --white-color: #fff;
 }

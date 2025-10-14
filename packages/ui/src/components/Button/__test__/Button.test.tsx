@@ -6,5 +6,5 @@ import '@testing-library/jest-dom/vitest';
 
 test("render Button component", () => {
   render(<Button>ButtonComponent</Button>);
-  expect(screen.getByText("ButtonComponent")).toBeInTheDocument()
+  expect(screen.getByText("ButtonComponent")).toBeInTheDocument();
 })

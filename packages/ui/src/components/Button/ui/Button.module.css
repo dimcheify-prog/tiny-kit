@@ -9,6 +9,14 @@
   text-transform: uppercase;
   color: var(--primary-color);
 
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &:hover {
+    background: var(--transparent-hover-color);
+  }
+
   &.outlined {
     border: 1px solid var(--primary-color);
   }
@@ -16,6 +24,10 @@
   &.contained {
     background: var(--primary-color);
     color: var(--white-color);
+
+    &:hover {
+      background: var(--contained-hover-color);
+    }
   }
 
   &.small {
@@ -33,4 +45,22 @@
   &.fullWidthStyle {
     width: 100%;
   }
+}
+
+.innerButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.startElement {
+  justify-self: flex-start;
+}
+
+.endElement {
+  justify-self: flex-end;
+}
+
+.centerElement {
+  justify-self: center;
 }
