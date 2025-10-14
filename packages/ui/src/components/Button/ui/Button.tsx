@@ -1,4 +1,4 @@
-import React, {ButtonHTMLAttributes, ReactElement} from "react";
+import React, {ButtonHTMLAttributes, ReactElement, RefObject} from "react";
 import classNames from "@/utils/classNames/classNames";
 import css from "./Button.module.css";
 
@@ -17,20 +17,23 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   endIcon?: ReactElement;
 }
 
-export const Button = ({
-  children,
-  className,
-  loading,
-  loadingProps,
-  startIcon,
-  endIcon,
-  variant='primary',
-  size='medium',
-  fullWidth=false,
-  ...rest
-}: ButtonProps) => {
+export const Button = (props: ButtonProps, ref: RefObject<HTMLButtonElement>) => {
+  const {
+    children,
+    className,
+    loading,
+    loadingProps,
+    startIcon,
+    endIcon,
+    variant='primary',
+    size='medium',
+    fullWidth=false,
+    ...rest
+  } = props;
+
   return (
     <button
+      ref={ref}
       className={
         classNames(
           css.button,
@@ -43,10 +46,11 @@ export const Button = ({
       {
         (loading && loadingProps) ? <div className={css.centerElement}>{loadingProps}</div> : (
         <div className={css.innerButton}>
-          {startIcon && <div className={css.startElement}>{startIcon}</div>}
+          <div className={css.startElement}>{startIcon}</div>
           <span className={css.centerElement}>{children}</span>
-          {endIcon && <div className={css.endElement}>{endIcon}</div>}
-        </div>)
+          <div className={css.endElement}>{endIcon}</div>
+        </div>
+        )
       }
     </button>
   );

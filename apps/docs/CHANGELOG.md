@@ -1,5 +1,19 @@
 # docs
 
+## 0.1.8
+
+### Patch Changes
+
+- Updated dependencies
+  - @dimcheify/tiny-kit@0.4.3
+
+## 0.1.7
+
+### Patch Changes
+
+- Updated dependencies
+  - @dimcheify/tiny-kit@0.4.2
+
 ## 0.1.6
 
 ### Patch Changes

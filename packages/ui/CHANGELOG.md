@@ -1,5 +1,17 @@
 # @repo/ui
 
+## 0.4.3
+
+### Patch Changes
+
+- fixed render child inside button component, added ref prop
+
+## 0.4.2
+
+### Patch Changes
+
+- add button component
+
 ## 0.4.1
 
 ### Patch Changes
