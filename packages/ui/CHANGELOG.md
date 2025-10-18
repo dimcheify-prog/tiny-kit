@@ -1,5 +1,11 @@
 # @repo/ui
 
+## 0.4.4
+
+### Patch Changes
+
+- Add polymorph component feature
+
 ## 0.4.3
 
 ### Patch Changes

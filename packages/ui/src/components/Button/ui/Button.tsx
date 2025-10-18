@@ -1,12 +1,13 @@
-import React, {ButtonHTMLAttributes, ReactElement, RefObject} from "react";
+import React, {ElementType, ReactElement} from "react";
 import classNames from "@/utils/classNames/classNames";
 import css from "./Button.module.css";
+import {Box, BoxProps} from "@/core";
 
 type VariantType = 'primary' | 'contained' | 'outlined';
 
 type ButtonSize = 'large' | 'medium' | 'small';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface BaseButtonProps {
   className?: string
   variant?: VariantType
   size?: ButtonSize;
@@ -17,7 +18,9 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   endIcon?: ReactElement;
 }
 
-export const Button = (props: ButtonProps, ref: RefObject<HTMLButtonElement>) => {
+type ButtonProps<C extends ElementType> = BoxProps<C, BaseButtonProps>
+
+export const Button = <C extends ElementType = 'button'> (props: ButtonProps<C>) => {
   const {
     children,
     className,
@@ -28,20 +31,21 @@ export const Button = (props: ButtonProps, ref: RefObject<HTMLButtonElement>) =>
     variant='primary',
     size='medium',
     fullWidth=false,
+    component,
     ...rest
   } = props;
 
   return (
-    <button
-      ref={ref}
+    <Box
       className={
         classNames(
           css.button,
           {[css.fullWidthStyle || '']: fullWidth},
-        [className, css[variant], css[size]]
+          [className, css[variant], css[size]]
         )
       }
-      {...rest}
+      component={component}
+      {...rest as any}
     >
       {
         (loading && loadingProps) ? <div className={css.centerElement}>{loadingProps}</div> : (
@@ -52,6 +56,6 @@ export const Button = (props: ButtonProps, ref: RefObject<HTMLButtonElement>) =>
         </div>
         )
       }
-    </button>
+    </Box>
   );
 }

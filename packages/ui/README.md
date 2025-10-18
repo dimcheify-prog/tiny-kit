@@ -39,6 +39,15 @@ function App() {
 
 ---
 
+You can now easily redefine component render in HTML DOM and use its attributes
+
+```javascript
+<Button component="a" href="https://domain.com">
+  Get Started
+</Button>
+```
+---
+
 ## ✨ Features
 
 - 🎨 Modern and clean design
