@@ -49,11 +49,11 @@ export const Button = <C extends ElementType = 'button'> (props: ButtonProps<C>)
     >
       {
         (loading && loadingProps) ? <div className={css.centerElement}>{loadingProps}</div> : (
-        <div className={css.innerButton}>
-          <div className={css.startElement}>{startIcon}</div>
-          <span className={css.centerElement}>{children}</span>
-          <div className={css.endElement}>{endIcon}</div>
-        </div>
+        <Box className={css.innerButton}>
+          <Box className={css.startElement}>{startIcon}</Box>
+          <Box component={'span'} className={css.centerElement}>{children}</Box>
+          <Box className={css.endElement}>{endIcon}</Box>
+        </Box>
         )
       }
     </Box>

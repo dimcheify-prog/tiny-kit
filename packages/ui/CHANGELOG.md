@@ -1,5 +1,11 @@
 # @repo/ui
 
+## 0.4.5
+
+### Patch Changes
+
+- fix error when component rendered not correctly when component is inline element by default
+
 ## 0.4.4
 
 ### Patch Changes

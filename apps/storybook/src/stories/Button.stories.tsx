@@ -28,7 +28,8 @@ export const Primary: Story = {
     loading: false,
     loadingProps: <div>Loading</div>,
     fullWidth: false,
+    component: 'a'
     // startIcon: <FcDown/>,
-    endIcon: <FcFlashOn/>,
+    // endIcon: <FcFlashOn/>,
   },
 };

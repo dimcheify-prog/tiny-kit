@@ -1,5 +1,12 @@
 # web
 
+## 0.1.10
+
+### Patch Changes
+
+- Updated dependencies
+  - @dimcheify/tiny-kit@0.4.5
+
 ## 0.1.9
 
 ### Patch Changes
